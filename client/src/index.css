@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fdfdfd;
+}
+form {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+input {
+  background: none;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0 8px 6px -6px #777;
+  box-shadow: 0 8px 6px -6px #777;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+}
+button {
+  background: rgba(115,177,136,.4);
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  margin: 0px 10px;
+  position: relative;
+  left: 0;
+  right: 0;
+  color: hsla(0,0%,100%,.7);
+  padding: 4px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  height: 30px;
+  font-size: 17px;
+}
+h2 {
+  font-size: 15px;
+}
+
+.App {
+  background-color:#fdfdfd;
+  min-height: 100vh;
+}
+#content-wrapper {
+  padding-bottom: 20px;
+}
+
+.Footer {
+  position: absolute;
+  background-color: #bcbcbc33;
+  border-top: 1px solid #E7E7E7;
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+}
+
+/* errors */
+.no-flash {
+  display: none;
+}
+.error {
+  position: absolute;
+  top: 65px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+/* end errors */
+
+/* authentication */
+.Login, .Signup {
+  text-align: center;
+  top: 350px;
+  position: absolute;
+  width: 350px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.login-input, .signup-input{
+  padding: 7px;
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+.signup-button a {
+  text-decoration: none;
+  color: rgba(255,255,255,.7);
+}
+/* end authentication */
+
+/* nav */
+.Nav {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+}
+.nav-wrapper {
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgba(115,177,136,.4);
+  min-height: 20px;
+}
+.Nav a {
+  padding: 2em;
+  text-decoration: none;
+  color: rgba(255,255,255,.7);
+}
+/* end nav */
+
+/* profile */
+.Profile{
+  margin: 65px 5%;
+}
+.profile-picture-wrapper{
+  text-align: center;
+  display: inline-block;
+  margin: 40px 0;
+}
+.profile-picture{
+  height: 135px;
+}
+/* end profile */
+
+@media only screen and (max-width: 1024px) {
+  .Nav {
+    text-align: center;
+  }
+}
+
+/*ECG*/
+#c{
+  background: -webkit-linear-gradient(left, white 0%, red 100%);
+  background-repeat: repeat-x;
+  border-radius: 100%;
+  -webkit-animation-name: linemove;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  width: 50%;
+  margin: 0 25%;
+}
+
+@-webkit-keyframes linemove {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 500px;
+  }
+}
+/*end ECG*/
