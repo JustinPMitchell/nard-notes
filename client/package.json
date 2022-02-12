@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ajv": "^6.3.0",
+    "ajv": "^6.12.3",
     "axios": "^0.17.1",
     "nodemon": "^1.17.2",
     "react": "^16.2.0",
